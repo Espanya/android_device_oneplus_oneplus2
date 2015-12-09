@@ -35,15 +35,15 @@ import com.android.internal.telephony.uicc.IccCardStatus;
  *
  * {@hide}
  */
-public class RIL2 extends RIL implements CommandsInterface {
-    static final String LOG_TAG = "RIL2";
+public class OPTRIL extends RIL implements CommandsInterface {
+    static final String LOG_TAG = "OPTRIL";
 
-    public RIL2(Context context, int preferredNetworkType,
+    public OPTRIL(Context context, int preferredNetworkType,
             int cdmaSubscription, Integer instanceId) {
         this(context, preferredNetworkType, cdmaSubscription);
     }
 
-    public RIL2(Context context, int networkMode, int cdmaSubscription) {
+    public OPTRIL(Context context, int networkMode, int cdmaSubscription) {
         super(context, networkMode, cdmaSubscription);
     }
 
