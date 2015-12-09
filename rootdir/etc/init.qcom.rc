@@ -36,6 +36,8 @@ on early-fs
     mount_all /fstab.qcom
 
 on init
+    export LD_PRELOAD "/system/lib/libboringssl-compat.so"
+
     mkdir /firmware 0771 system system
     mkdir /bt_firmware 0771 system system
     mkdir /persist 0771 system system
