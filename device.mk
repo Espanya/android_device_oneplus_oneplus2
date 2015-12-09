@@ -57,6 +57,10 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
+    
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril_class=OPTRIL \
+    ro.telephony.ril.v3=qcomdsds
 
 # Permissions
 PRODUCT_COPY_FILES += \
